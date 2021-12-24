@@ -3,15 +3,54 @@
 <head>
 	<title>HACKATON-1</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Cookie&family=Josefin+Sans:ital,wght@1,600&family=Libre+Franklin:wght@300&family=Sanchez:ital@1&family=Satisfy&display=swap" rel="stylesheet">
 </head>
 <body>
+	<nav id="top"> <h1>Expense Tracking</h1></nav>
 
-	<form>
-		<label>Expense</label>
-		<input type="text" name="expense">
-		<button id="submitButton">Submit</button>
-	</form>
 
-	<script src="script.js"></script>
-</body>
-</html>
+	<div id="divFormAndContainer">
+		<form id="form">
+			<label>Expense:</label>
+			<input type="text" name="expense" required>
+			<br>
+			<label>Cost:</label>
+			<input type="number" name="cost" min="0" step="0.10" required>
+			<br>
+			<label>Date:</label>
+			<input type="date" name="date" required>
+			<br>
+
+
+
+			<label>Type:</label>
+			<input list="type" name="type">
+			<datalist id="type">
+				<option value="Insurance">
+					<option value="Housing">
+						<option value="Health">
+							<option value="Transportation">
+								<option value="Food">
+									<option value="Personal">
+										<option value="Education">
+											<option value="Entertainment">
+												<option value="Children">
+													<option value="Other">
+													</datalist>
+													<br>
+
+													<button id="submitButton">Submit</button>
+												</form>
+												<div id="container"></div>
+											</div>
+
+
+
+
+											<div id="totalAmount"><h2>Total amount</h2></div>
+
+											<script src="script.js"></script>
+										</body>
+										</html>
