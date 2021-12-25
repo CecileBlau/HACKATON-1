@@ -77,7 +77,7 @@ function amountOfParagraphs(){
 	}
 }
 
-locationTotalAmount = document.getElementById("totalAmount")
+locationTotalAmount = document.getElementById("totalAmount").children[1]
 let counter = 0
 function totalAmountOfCost(){
 	for(let j=0; j<1;j++){
@@ -89,21 +89,13 @@ function totalAmountOfCost(){
 		locationTotalAmount.removeChild(locationTotalAmount.firstChild);
 	}
 	let paragraphTwo = document.createElement("p");
-	let textTwo = document.createTextNode(`Your total amount is: ${counter} NIS`);
+	let textTwo = document.createTextNode(`You have spent -${counter} NIS`);
+	paragraphTwo.classList.add("paragraphTwo");
 	paragraphTwo.appendChild(textTwo);
 	locationTotalAmount.appendChild(paragraphTwo);	
+
+	console.log(`${counter}`)
 }
-
-
-
-
-//Since the array is a collection, we need to separete each indivual element 
-//to be able to display it to the user.
-//but first within the for of loop, it will create a li for each element 
-//and a div that containes the lis
-
-
-
 
 
 
@@ -111,4 +103,24 @@ function totalAmountOfCost(){
 //append the elements of the array in the container div
 //find the containerLocation
 let containerLocation = document.getElementById("container")
+
+
+
+//-------------------GOAL SECTION-------------------------//
+
+let setButton = document.getElementById("setButton")
+let goalNumber=document.getElementById("goalNumber").value
+let month = document.getElementById("month").value
+
+setButton.addEventListener("click", goalFunction)
+
+function goalFunction(){
+	let paragraphGoal = document.createElement("p");
+	let goalDisplay = document.createTextNode(`In ${document.getElementById("month").value} your goal is to spend maximum ${document.getElementById("goalNumber").value} NIS `)
+	let goalDisplayOnlyNumber = document.createTextNode(`${document.getElementById("goalNumber").value}`)
+	paragraphGoal.appendChild(goalDisplay)
+	document.getElementById("displayYourGoal").appendChild(paragraphGoal)
+
+}
+
 
