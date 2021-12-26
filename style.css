@@ -3,6 +3,7 @@
 	box-sizing: border-box;
 	font-size: 20px;
 	font-family: arial;
+	border: none;
 }
 html, body{
 	margin: 0;
@@ -32,10 +33,9 @@ html, body{
 }
 #main-header{
 	
-	background-image: url("333.jpg");
-	 width:1500;
-	  height:800;
-   /* background-position: absolute;*/
+	background-image: url("2.jpg");
+	background-size: cover;
+    background-position: absolute;
 	padding-bottom:  30px;
 }
 h1 {
@@ -68,7 +68,9 @@ h3{ color:
 	padding: 10px; 
 color: hsl(268, 50%, 30%)
 }
-
+footer {
+	border:1px solid #dddddd;
+}
 footer h4{
 	text-align: center;
 	font-weight: normal;
@@ -82,7 +84,7 @@ footer h4{
 	overflow: auto;}
 
 #top{
-	border: 1px solid #777;
+	/*border: 1px solid #777;*/
 	height: 150px;
 	font-size: 35px;
 }
@@ -145,11 +147,6 @@ input:hover {
 	margin-top: 5%;
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.5)
 }
-#totalAmount {
-	padding: 10px;
-	/*box-shadow: 0 0 15px 4px;*/
-	/*border-radius: 3px solid black;*/
-}
 
 table {
 	font-family: arial, sans-serif;
@@ -158,11 +155,20 @@ table {
 }
 
 td, th {
-	border: 1px solid #dddddd;
+	border: 1px solid white;
 	text-align: left;
 	padding: 8px;
 }
 
-tr:nth-child(even) {
+tr/*:nth-child(even)*/ {
 	background-color: #dddddd;
+}
+
+#displayYourGoal{
+	padding-left: 20px;
+	border: 1px solid #dddddd;
+}
+#totalAmount {
+	padding-left: 10px;
+	border-bottom: 1px solid #dddddd;
 }

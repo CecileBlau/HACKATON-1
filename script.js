@@ -76,7 +76,7 @@ function amountOfParagraphs(){
 		// containerLocation.appendChild(paragraph);	
 
 		// Find a <table> element with id="myTable":
-		let table = document.getElementById("expanse_table");
+		let table = document.getElementById("expense_table");
 
 		// Create an empty <tr> element and add it to the 1st position of the table:
 		let row = table.insertRow(-1);
@@ -94,24 +94,25 @@ function amountOfParagraphs(){
 		cell4.innerHTML = newElem.type;
 	}
 }
-
-locationTotalAmount = document.getElementById("totalAmount")
+locationTotalAmount = document.getElementById("totalAmount").children[1]
 let counter = 0
 function totalAmountOfCost(){
 	for(let j=0; j<1;j++){
-
-		counter=counter + parseInt(newElem.cost)
+		
+		counter=counter + parseInt(newElem.cost)	
 	}
 
 	while (locationTotalAmount.firstChild) {
 		locationTotalAmount.removeChild(locationTotalAmount.firstChild);
 	}
 	let paragraphTwo = document.createElement("p");
-	let textTwo = document.createTextNode(`Your total amount is: ${counter} NIS`);
+	let textTwo = document.createTextNode(`You have spent -${counter} NIS`);
+	paragraphTwo.classList.add("paragraphTwo");
 	paragraphTwo.appendChild(textTwo);
-	locationTotalAmount.appendChild(paragraphTwo);
-}
+	locationTotalAmount.appendChild(paragraphTwo);	
 
+	console.log(`${counter}`)
+}
 
 
 
@@ -123,9 +124,30 @@ function totalAmountOfCost(){
 
 
 
-
-
-
 //append the elements of the array in the container div
 //find the containerLocation
 let containerLocation = document.getElementById("container")
+
+
+
+
+//-------------------GOAL SECTION-------------------------//
+
+let setButton = document.getElementById("setButton")
+let goalNumber=document.getElementById("goalNumber").value
+let month = document.getElementById("month").children
+let allMonths = [];
+setButton.addEventListener("click", goalFunction)
+
+
+function goalFunction(){
+	let paragraphGoal = document.createElement("p");
+
+
+	let goalDisplay = document.createTextNode(`Your goal is to spend maximum ${document.getElementById("goalNumber").value} NIS `)
+	let goalDisplayOnlyNumber = document.createTextNode(`${document.getElementById("goalNumber").value}`)
+	paragraphGoal.appendChild(goalDisplay)
+	document.getElementById("displayYourGoal").appendChild(paragraphGoal)
+
+
+}

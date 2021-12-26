@@ -20,8 +20,32 @@
 		<br>
 		<br>
 		<br>
-		<h1 class="eTname">Expense Tracker</h1>
+		<nav id="top"> <h1>Monthly Expense Tracker</h1></nav>
 </header>
+<div id="goal">
+	<h2>Set Your Goal</h2>
+	<label>This month</label>
+	<input list="month" name="month">
+	<datalist id="month">
+	<option value="January">
+	<option value="February">
+	<option value="March">
+	<option value="April">
+	<option value="May">
+	<option value="June">
+	<option value="July">
+	<option value="August">
+	<option value="September">
+	<option value="October">
+	<option value="November">
+	<option value="December">
+	</datalist>
+
+	<label>I need to spend maximum</label>
+	<input type="number" name="spend" min="0" step="0.10" id="goalNumber"required> NIS
+	<button id="setButton">SET!</button>
+	</div>
+
 <div id="divFormAndContainer">
 	<form id="form">
 		<h2>Add A New Item:</h2>
@@ -37,25 +61,25 @@
 		<label>Type:</label>
 		<input list="type" name="type" placeholder="Choose a type...">
 		<datalist id="type">
-			<option value="Insurance">
-			<option value="Housing">
-			<option value="Health">
-			<option value="Transportation">
-			<option value="Food">
+	<option value="Insurance">
+	<option value="Housing">
+	<option value="Health">
+	<option value="Transportation">
+		<option value="Food">
 			<option value="Personal">
-			<option value="Education">
-			<option value="Entertainment">
-				<!-- <option value="Children"> -->
-			<option value="Other">
-		</datalist>
-		<br>
+				<option value="Education">
+					<option value="Entertainment">
+						<option value="Children">
+							<option value="Other">
+							</datalist>
+							<br>
 
 		<button id="submitButton">Submit</button>
 	</form>
 
 	<div id="container">
 
-				<table id="expanse_table">
+				<table id="expense_table">
   <tr>
     <th>Name</th>
     <th>Cost</th>
@@ -63,10 +87,11 @@
     <th>Type</th>
   </tr>
 </table>
-<h3 id="totalAmount">Total:</h3>
 	</div>
 </div>
-
+<div id="displayYourGoal"><h4>Your Goal:</h4></div>
+<div id="totalAmount"><div><h3>Your Balance:</h3></div>
+<div id="newSpotForBalance"></div>
 
 
 <footer>
