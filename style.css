@@ -33,7 +33,9 @@ html, body{
 #main-header{
 	
 	background-image: url("333.jpg");
-  background-size:cover;
+	 width:1500;
+	  height:800;
+   /* background-position: absolute;*/
 	padding-bottom:  30px;
 }
 h1 {
