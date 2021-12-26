@@ -106,20 +106,34 @@ let containerLocation = document.getElementById("container")
 
 
 
+
+
+
+
+
+
+
+
+
+
 //-------------------GOAL SECTION-------------------------//
 
 let setButton = document.getElementById("setButton")
 let goalNumber=document.getElementById("goalNumber").value
-let month = document.getElementById("month").value
-
+let month = document.getElementById("month").children
+let allMonths = [];
 setButton.addEventListener("click", goalFunction)
+
 
 function goalFunction(){
 	let paragraphGoal = document.createElement("p");
-	let goalDisplay = document.createTextNode(`In ${document.getElementById("month").value} your goal is to spend maximum ${document.getElementById("goalNumber").value} NIS `)
+
+
+	let goalDisplay = document.createTextNode(`Your goal is to spend maximum ${document.getElementById("goalNumber").value} NIS `)
 	let goalDisplayOnlyNumber = document.createTextNode(`${document.getElementById("goalNumber").value}`)
 	paragraphGoal.appendChild(goalDisplay)
 	document.getElementById("displayYourGoal").appendChild(paragraphGoal)
+
 
 }
 
