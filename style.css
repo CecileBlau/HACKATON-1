@@ -31,17 +31,17 @@ html, body{
 /*	border-bottom: 1px solid rgba(255, 255, 255, .3);*/
 }
 #main-header{
-	background-color: (0, 0, 0, 0, .6);
-	background-image: url("111.jpg");
-	background-blend-mode: multiply;
-	background-size: cover;
+	
+	background-image: url("33.jpg");
+
+	background-size: ;
 	padding-bottom:  30px;
 }
 h1 {
 	text-align: center;
 	margin: 0;
 	padding: 30px;
-	color: hsl(0, 0%, 99%);
+	color: hsl(268, 50%, 30%);
 	font-size: 60px;
 	font-weight: 100;
 	text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
@@ -51,8 +51,8 @@ h1 {
 h2 { font-size: 30px;
 	padding: 10px;
 	text-align: center;
-	color: hsl(268, 50%, 30%)
-	text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+	color: hsl(268, 50%, 30%);
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 	font-weight: normal;
 }
 
