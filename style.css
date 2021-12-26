@@ -1,0 +1,174 @@
+
+* {
+	box-sizing: border-box;
+	font-size: 20px;
+	font-family: arial;
+	border: none;
+}
+html, body{
+	margin: 0;
+	padding: 0;
+	background-color:white;
+	color: hsl(268, 50%, 30%);
+}
+#main-nav ul {
+	margin: 0;
+}
+#main-nav li {
+	display: inline;
+}
+#main-nav a {
+	display: inline-block;
+	padding: .5em;
+	text-decoration: none;
+}
+#main-nav a:hover{
+	background-color: rgba(255, 255, 255, .3);
+}
+#main-nav {
+	text-align: right;
+	font-size: 1.1em;
+	font-weight: lighter;
+/*	border-bottom: 1px solid rgba(255, 255, 255, .3);*/
+}
+#main-header{
+	
+	background-image: url("2.jpg");
+	background-size: cover;
+    background-position: absolute;
+	padding-bottom:  30px;
+}
+h1 {
+	text-align: center;
+	margin: 0;
+	padding: 30px;
+	color: hsl(268, 50%, 30%);
+	font-size: 60px;
+	font-weight: 100;
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	font-family: "Raleway", sans-serif;
+}
+
+h2 { font-size: 30px;
+	padding: 10px;
+	text-align: center;
+	color: hsl(268, 50%, 30%);
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	font-weight: normal;
+}
+
+
+#divFormAndContainer{
+	display: flex;
+	text-align: left;
+}
+
+h3{ color: 
+	text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+	padding: 10px; 
+color: hsl(268, 50%, 30%)
+}
+footer {
+	border:1px solid #dddddd;
+}
+footer h4{
+	text-align: center;
+	font-weight: normal;
+	text-color: hsl(268, 40%, 50%);
+}
+
+#container{
+	/*max: 300px;*/
+	width: 100%;
+	border: 0px solid #777;
+	overflow: auto;}
+
+#top{
+	/*border: 1px solid #777;*/
+	height: 150px;
+	font-size: 35px;
+}
+
+#form{
+	background-color: hsl(261, 26%, 84%);
+	background-size: cover;
+	display: inline-table;
+	width: 25%;
+	/*border: .5px;*/
+	height: 300px;
+	font-size: 20px;
+	padding: 30px;
+}
+
+
+label, input{
+	padding: 8px;
+	margin: 10px;
+
+}
+
+input{
+	border-radius: 15px;
+	padding: 15px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.5)
+}
+
+input:hover {
+	background-color: hsl(268, 60%, 90%);
+}
+
+#submitButton:hover {
+	background-color: hsl(268, 60%, 90%);
+	border: 1px solid #111;
+}
+
+.paragraph{
+	margin: 0;
+	background-color: hsl(268, 60%, 90%);
+	color: black;
+	font-size: 20px;
+	border: none;
+	border-radius: 4px;
+	width: 100%;
+	height: 20%;
+	padding: 8px;
+	/*margin-left: 20px;*/
+}
+
+#submitButton{
+	background-color: hsl(268, 40%, 50%);
+	color: black;
+	padding: 12px 20px;
+	font-size: 20px;
+	border: 1px solid #111;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left: 20%;
+	margin-top: 5%;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.5)
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid white;
+	text-align: left;
+	padding: 8px;
+}
+
+tr/*:nth-child(even)*/ {
+	background-color: #dddddd;
+}
+
+#displayYourGoal{
+	padding-left: 20px;
+	border: 1px solid #dddddd;
+}
+#totalAmount {
+	padding-left: 10px;
+	border-bottom: 1px solid #dddddd;
+}
